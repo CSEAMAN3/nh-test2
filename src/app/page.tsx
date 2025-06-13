@@ -4,9 +4,8 @@ import Hero from "@/components/Hero";
 import { FaStar } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
-
-
-
+import ReviewSlider from "@/components/ReviewSlider";
+import Cta from "@/components/Cta"
 
 
 export default function Home() {
@@ -98,7 +97,7 @@ export default function Home() {
             {/* img card 3 */}
             <div className="order-6 lg:order-5">
               <Image 
-                src={`/images/training_three.jpg`}
+                src={`/images/training_ten.jpg`}
                 alt={`Football coach providing coaching to two young children. Coach is holding a clip board and pointing into the distance with the players looking forward.`}
                 width={400}
                 height={400}
@@ -116,7 +115,7 @@ export default function Home() {
             {/* img card 4 */}
             <div className="order-8 sm:order-7">
               <Image 
-                src={`/images/training_three.jpg`}
+                src={`/images/training_eight.jpg`}
                 alt={`Football coach providing coaching to two young children. Coach is holding a clip board and pointing into the distance with the players looking forward.`}
                 width={400}
                 height={400}
@@ -126,6 +125,14 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Reviews Section */}
+      <div className="bg-primary px-8 py-16 mt-8">
+        <h2 className="font-bold text-2xl md:text-4xl italic sm:mb-2 text-primary-accent text-center">Trusted by parents throughout Norfolk</h2>
+        <p className="text-secondary font-light text-center max-w-[500px] md:max-w-[700px] mx-auto md:text-lg mb-8">We&#39;re pleased to be rated 5 stars on google by parents who&#39;ve seen their child grow in confidence, skill and love for the game.</p>
+        <ReviewSlider />
+      </div>
+      {/* CTA section */}
+      <Cta />
     </main>
   );
 }
