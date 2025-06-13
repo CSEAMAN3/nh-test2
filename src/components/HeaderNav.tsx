@@ -33,7 +33,7 @@ export default function HeaderNav() {
   }, [])
 
   return (
-    <div className="flex">
+    <div className="flex z-50">
       {/* nav bars */}
       <motion.div 
         className={`w-10 h-[36px] ${toggleNav ? "fixed" : "absolute"} top-[36px] right-8 cursor-pointer lg:hidden z-50 group`}
