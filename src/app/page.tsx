@@ -1,11 +1,13 @@
 import Image from "next/image";
 
-import Hero from "@/components/Hero";
 import { FaStar } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+
+import Hero from "@/components/Hero";
 import ReviewSlider from "@/components/ReviewSlider";
 import Cta from "@/components/Cta"
+import Faq from "@/components/Faq";
 
 
 export default function Home() {
@@ -45,8 +47,8 @@ export default function Home() {
         </div>
       </div>
       {/* 8 card section */}
-      <div className="p-8">
-        <div className="max-w-[1200px] mx-auto">
+      <div>
+        <div className="max-w-[1200px] p-8 mx-auto">
           <h2 className="font-bold text-2xl sm:text-4xl italic sm:mb-2">Confidence Starts Here</h2>
           <p className="max-w-[62ch] font-light mb-4">NH Football Coaching provides small, tailored coaching sessions designed to help young players grow. Every session is built around positive ecouragment, structured learning and a whole lot of fun, helping children advance thier ability, gain confidence and develop the right mindset.</p>
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
@@ -133,6 +135,12 @@ export default function Home() {
       </div>
       {/* CTA section */}
       <Cta />
+      {/* FAQ section */}
+      <div className="max-w-[1200px] p-8 mx-auto">
+        <h2 className="font-bold text-2xl md:text-4xl italic sm:mb-2 text-center">Frequently Asked Questions</h2>
+        <p className="font-light text-center md:text-lg max-w-[32ch] sm:max-w-[60ch] mx-auto mb-4">Here&#39;s everything parents usually want to know before getting started.</p>
+        <Faq />
+      </div>
     </main>
   );
 }

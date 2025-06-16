@@ -9,3 +9,10 @@ export type Review = {
   name: string;
   content: string;
 }
+
+export type question = {
+  id: number;
+  category: string;
+  question: string;
+  answer: string;
+}
